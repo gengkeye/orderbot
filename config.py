@@ -12,8 +12,6 @@ class Config:
     SECRET_KEY = os.environ.get('SECRET_KEY', '2vym+ky!997d5kkcc64mnz06y1mmui3lut#(^wd=%s_qj$1%x')
     # How many line display every page, default 25
 
-    REPO_URL = 'git@210.213.158.59:oldseven/jumpserver.git'
-
     # telegram bot
     TELE_USERNAME = 'AnnWithBot'
     TELE_TOKEN = '421814483:AAGib4zYELHeMnymNXVl6savZb0HnBcgPlc'
@@ -25,7 +23,7 @@ class Config:
     DEBUG = False
 
     # DEBUG, INFO, WARNING, ERROR, CRITICAL can set. See https://docs.djangoproject.com/en/1.10/topics/logging/
-    LOG_LEVEL = 'DEBUG'
+    LOG_LEVEL = 'INFO'
 
     # mysql database
     DB_ENGINE = 'mysql'
@@ -33,7 +31,7 @@ class Config:
     DB_HOST = '127.0.0.1'
     DB_PORT = 3306
     DB_USER = 'jumpserver'
-    DB_PASSWORD = 'Redhat2008'
+    DB_PASSWORD = 'QYoRb6wa4xVQi^fv'
 
 
     # Use Redis as broker for celery and web socket
@@ -74,7 +72,6 @@ class Config:
 
 
 class ProductionConfig(Config):
-    # Email SMTP setting, we only support smtp send mail
     EMAIL_HOST = 'smtp.gmail.com'
     EMAIL_PORT = 465
     EMAIL_HOST_USER = 'dejiegeng@gmail.com'
